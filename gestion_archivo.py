@@ -1,5 +1,5 @@
 """
-Created on Mon May 30 11:50:20 2022
+Created on Mon May 30 19:24:20 2022
 
 @author: CARLOS RUIZ MONTERO
 """
@@ -17,3 +17,8 @@ def agregar_contenido_archivo(nombre,contenido):
 
     archivo.write("\n" + contenido)
     archivo.close()
+    
+def leer_archivo(nombre):
+    archivo = open(nombre,"rt", encoding =('utf8'))
+    contenido = archivo.read()
+    return contenido
