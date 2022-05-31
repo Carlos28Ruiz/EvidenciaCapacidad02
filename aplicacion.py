@@ -4,7 +4,7 @@ Created on Mon May 30 19:36:53 2022
 
 @author: CARLOS RUIZ MONTERO
 """
-import gestion_archivos
+import gestion_archivo
 
 def menu():
     print("*****MENU PRINCIPAL*****")
@@ -18,23 +18,23 @@ def crear():
     print("--Crear Archivo--")
     archivo  = input("Archivo: ")
     contenido = input("Contenido: ")
-    gestion_archivos.crear_archivo(archivo, contenido)
-    
+    gestion_archivo.crear_archivo(archivo, contenido)
+
 def eliminar():
     print("--Eliminar Archivo")
     archivo = input("Archivo: ")
-    gestion_archivos.eliminar_archivo(archivo)
+    gestion_archivo.eliminar_archivo(archivo)
 
 def agregar():
     print("--Agregar Datos a un archivo--")
     archivo = input("Archivo: ")
     contenido = input("Contenido: ")
-    gestion_archivos.agregar_contenido_archivo(archivo, contenido)
+    gestion_archivo.agregar_contenido_archivo(archivo, contenido)
     
 def listar():
     print("--Mostrar contenido de un archivo--")
     archivo = input("Archivo: ")
-    print(gestion_archivos.leer_archivo(archivo))
+    print(gestion_archivo.leer_archivo(archivo))
 
 def salir():
     print("Gracias por su visita...")
