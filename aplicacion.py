@@ -39,3 +39,6 @@ def listar():
 def salir():
     print("Gracias por su visita...")
 
+def error():
+    print("--Opción incorrecta--")
+    
