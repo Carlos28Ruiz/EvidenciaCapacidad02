@@ -2,7 +2,7 @@
 """
 Created on Mon May 30 19:36:53 2022
 
-@author: CARLOS
+@author: CARLOS RUIZ MONTERO
 """
 import gestion_archivos
 
@@ -35,4 +35,7 @@ def listar():
     print("--Mostrar contenido de un archivo--")
     archivo = input("Archivo: ")
     print(gestion_archivos.leer_archivo(archivo))
+
+def salir():
+    print("Gracias por su visita...")
 
