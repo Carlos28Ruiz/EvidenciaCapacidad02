@@ -42,3 +42,19 @@ def salir():
 def error():
     print("--Opción incorrecta--")
     
+opcion = 1
+while opcion != 5:
+    menu()
+    opcion = int(input("opcion: "))
+    if opcion ==1:
+        crear()
+    elif opcion ==2:
+        eliminar()
+    elif opcion ==3:
+        agregar()
+    elif opcion ==4:
+        listar()
+    elif opcion ==5 :
+        salir()
+    else:
+        error()
