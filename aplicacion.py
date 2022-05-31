@@ -31,3 +31,8 @@ def agregar():
     contenido = input("Contenido: ")
     gestion_archivos.agregar_contenido_archivo(archivo, contenido)
     
+def listar():
+    print("--Mostrar contenido de un archivo--")
+    archivo = input("Archivo: ")
+    print(gestion_archivos.leer_archivo(archivo))
+
