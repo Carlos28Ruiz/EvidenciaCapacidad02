@@ -14,3 +14,9 @@ def menu():
     print("4. Mostrar contenido del archivo")
     print("5. Salir")
 
+def crear():
+    print("--Crear Archivo--")
+    archivo  = input("Archivo: ")
+    contenido = input("Contenido: ")
+    gestion_archivos.crear_archivo(archivo, contenido)
+    
